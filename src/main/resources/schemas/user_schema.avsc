@@ -1,0 +1,17 @@
+{
+  "type": "record",
+  "name": "DeviceProfile",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string",
+      "index": true,
+      "weight":0.75,
+      "by_default":"localhost"
+    },
+    {
+      "name": "age",
+      "type": "int"
+    }
+  ]
+}

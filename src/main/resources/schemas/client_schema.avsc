@@ -1,0 +1,46 @@
+{
+  "type": "record",
+  "name": "DeviceProfile",
+  "fields": [
+    {
+      "name": "serialNumber",
+      "type": "string",
+      "scope": "system"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "scope": "system"
+    },
+    {
+      "name": "os",
+      "type": "string",
+      "scope": "system"
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "scope": "system"
+    },
+    {
+      "name": "startTime",
+      "type": "long",
+      "scope": "system"
+    },
+    {
+      "name": "networkType",
+      "scope": "system",
+      "type": {
+        "type": "enum",
+        "name": "NetworkType",
+        "symbols": [
+          "WiFi",
+          "Cellular",
+          "Ethernet",
+          "Bluetooth",
+          "Other"
+        ]
+      }
+    }
+  ]
+}
